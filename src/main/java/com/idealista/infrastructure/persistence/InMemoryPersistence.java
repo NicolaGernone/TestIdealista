@@ -36,4 +36,12 @@ public class InMemoryPersistence {
     }
 
     //TODO crea los métodos que necesites
+    
+    public List<AdVO> getAdsList(){
+    	return ads;
+    }
+    
+    public List<PictureVO> getPicturesList(){
+    	return pictures;
+    }
 }
