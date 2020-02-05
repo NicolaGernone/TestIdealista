@@ -35,7 +35,6 @@ public class InMemoryPersistence {
         pictures.add(new PictureVO(8, "http://www.idealista.com/pictures/8", "HD"));
     }
 
-    //TODO crea los métodos que necesites
     
     public List<AdVO> getAdsList(){
     	return ads;
@@ -43,5 +42,14 @@ public class InMemoryPersistence {
     
     public List<PictureVO> getPicturesList(){
     	return pictures;
+    }
+    
+    public void setAds(List<AdVO> adsNew) {	
+    	this.ads = adsNew;
+    	
+    }
+    
+    public void setPictures(List<PictureVO> picsNew) {
+    	this.pictures = picsNew;
     }
 }
